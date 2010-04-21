@@ -1,19 +1,25 @@
 ---
-name: Sys-Prctl
-version: 1.00
+abstract: 'Give access to prctl system call from Perl'
 author:
   - 'Troels Liebe Bentsen <troels@infopro.dk>'
-abstract: Give access to prctl system call from Perl
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
 build_requires:
   Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3601'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Sys-Prctl
 provides:
   Sys::Prctl:
     file: lib/Sys/Prctl.pm
-    version: 1.00
-generated_by: Module::Build version 0.2808
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    version: 1.01
+requires:
+  Config: 0
+  POSIX: 0
+  perl: '>= 5.8.0'
+resources:
+  license: http://dev.perl.org/licenses/
+version: 1.01

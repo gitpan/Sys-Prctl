@@ -10,8 +10,8 @@ DESCRIPTION
 
 SYNOPSIS
       use Sys::Prctl(prctl_name);
-  
-      #
+      
+  #
       # Use with functions
       # 
 
@@ -22,8 +22,8 @@ SYNOPSIS
       #
       # Use as an object
       #
-  
-      my $process = new Sys::Prctl();
+      
+  my $process = new Sys::Prctl();
 
       # Process name is now "Short name"
       my $oldname = $process->name();
